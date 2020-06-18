@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="https://kit.fontawesome.com/90ca227d19.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <title>Pick n' Pay</title>
+</head>
+<body>
+
+  <!--FIRST NAV BAR-->
+  <header id="myHeader">
+  <nav class="bg-light">
+    <div class="container">
+     <div class="row">
+      <div class="col-md-3 my-lg-2">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
+      </div>
+
+      <div class="select col-md-6">
+        <form class="my-lg-3">
+         <select id="select" class="form-control mr-sm-2" name="All">
+           <option value="">All</option>
+           <option value="choice1">choice1</option>
+           <option value="choice2">choice2</option>
+           <option value="choice3">choice3</option>
+           <option value="choice4">choice4</option>
+         </select>
+       </form>
+
+       <div>
+        <form class="my-lg-3">
+          <input id="search" class="form-control mr-sm-2" type="text" placeholder="Enter a keyword..&#x09; &#x09; &#x09; &#xF002;" style="font-family:Arial, FontAwesome">
+        </form>
+      </div>
+    </div>
+
+    <div class="col-md-3 my-lg-3">
+      <div id="badge"><p id="temp">0</p></div>
+      <button id="myCart" type="button" data-html="true" class="btn btn-primary" data-toggle="popover">My Cart  <i class="fas fa-sort-down"></i></button>
+    </div>
+  </div>
+</div>
+</nav>
+
+<nav class="bg-light">
+  <div class="container">
+    <div class="row">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Show by what you need</a>
+         <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+       <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
+       <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+      </div>
+    </li>
+
+    <li class="nav-item">
+     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Today's Deals</a>
+     <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+  </li>
+
+
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">My Shopping List</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+  </li>
+</ul>
+<button id="loginBtn">
+  <a class="nav-link" href="login.html" role="button" aria-haspopup="true" aria-expanded="false" style="font-family:Arial, FontAwesome">Login</a>
+</button>
+<button id="signupBtn">
+  <a class="nav-link" href="#" role="button" aria-haspopup="true" aria-expanded="false">Sign Up</a>
+</button>
+</div>
+</div>
+</nav>
+</header>
+
+
+<div class="container">
+  <!-- Grid row -->
+  <div class="row" >
+    <!-- Grid column -->
+    <div class="col-md-6 mt-md-0 mt-3" style="border-bottom: 1px solid #DCDCDC">
+      <!-- Content -->
+      <div class="my-lg-5">
+        <h2 class="font-weight-bold">Login to checkout</h2>
+        <p class="lead">You need to login in order to checkout.</p>
+
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="  &#xF007 Enter email" style="font-family:Arial, FontAwesome">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="   &#xf09c Password" style="font-family: Arial, FontAwesome">
+        </div>
+
+		<div class="form-group">
+          <label for="password">Confirm Password</label>
+          <input type="password" class="form-control" id="confirmPassword" placeholder="   &#xf09c Password" style="font-family: Arial, FontAwesome">
+        </div>
+		
+		<div id="message">
+		</div>
+        <a href="products.html"><button id="login" type="submit" class="btn btn-primary">LOGIN</button></a>
+        <a id="forgot" href="#">Forgot Password</a>
+      </div>
+      <!-- Grid column -->
+      <hr class="clearfix w-100 d-md-none pb-3">
+    </div>
+  </div>
+</div>
+
+
+  <div class="container">
+  <!-- Grid row -->
+  <div class="row" >
+    <!-- Grid column -->
+    <div class="col-md-6 mt-md-0 mt-3">
+      <!-- Content -->
+      <div class="my-lg-5">
+        <h2 class="font-weight-bold">Register for an account</h2>
+        <p class="lead">Create an account to successfully checkout your cart</p>
+
+        <button id="signup" type="submit" class="btn btn-primary">SIGN UP</button>
+      </div>
+      <!-- Grid column -->
+      <hr class="clearfix w-100 d-md-none pb-3">
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="page-footer font-small teal pt-4">
+  <!-- Footer Text -->
+  <div class="container-fluid foot1">
+    <!-- Footer Text -->
+    <div class="container">
+      <!-- Grid row -->
+      <div class="row" >
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3 spark">
+          <!-- Content -->
+           <div>
+            <img id="shimmer" src="images/spark.png">
+          </div>
+          <div>
+          <h5 class="text-uppercase font-weight-bold my-lg-5">
+          Get recommendations, deals, tips, updates, promotions and more.</h5>
+          </div>
+        </div>
+        <!-- Grid column -->
+        <hr class="clearfix w-100 d-md-none pb-3">
+        <!-- Grid column -->
+        <div class="col-md-6 mb-md-0 mb-3">
+          <!-- Content -->
+          <div class="wrap">
+          <div class="search my-lg-5">
+            <input type="text" class="searchTerm" placeholder="Your email Address">
+            <button type="submit" class="searchButton">
+              SIGN UP
+           </button>
+           </div>
+         </div>
+
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </div>
+</div>
+  <!-- Footer Text -->
+  <!-- Copyright -->
+  <div class="container">
+    <!-- Grid row -->
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-md-5 mt-md-0 mt-3">
+        <!-- Content -->
+        <div class="my-lg-2">
+          <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
+        </div>
+        <div class="my-lg-2">
+          © Pick & Pay 2018. All Rights Reserved.
+        </div>
+      </div>
+        <!-- Grid column -->
+        <hr class="clearfix w-100 d-md-none pb-3">
+        <!-- Grid column -->
+        <div class="col-md-7 mb-md-0 mb-3">
+          <!-- Content -->
+          <ul id="menu">
+            <li>About</li>
+            <li>Contact Us</li>
+            <li>FAQs</li>
+            <li>Terms and Conditions</li>
+            <li>Privacy and Policy</li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+<script>
+			
+			function checkPasswordMatch() {
+			var password = $("#password").val();
+			var confirmPassword = $("#confirmPassword").val();
+
+			if (password != confirmPassword)
+			$("#message").html("Passwords do not match!");
+			else
+			$("#message").html("Passwords match.");
+			}
+
+			$(document).ready(function () {
+			$("#confirmPassword").keyup(checkPasswordMatch);
+			});
+			
+			</script>
+  <script type="text/javascript" src="index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="bootstrap.js"></script>
+</body>
+</html>

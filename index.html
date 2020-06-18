@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="https://kit.fontawesome.com/90ca227d19.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <title>Pick n' Pay</title>
+</head>
+<body>
+
+  <!--FIRST NAV BAR-->
+  <header id="myHeader">
+  <nav class="bg-light">
+    <div class="container">
+     <div class="row">
+      <div class="col-md-3 my-lg-2">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
+      </div>
+
+      <div class="select col-md-6">
+        <form class="my-lg-3">
+         <select id="select" class="form-control mr-sm-2" name="All">
+           <option value="">All</option>
+           <option value="choice1">choice1</option>
+           <option value="choice2">choice2</option>
+           <option value="choice3">choice3</option>
+           <option value="choice4">choice4</option>
+         </select>
+       </form>
+
+       <div>
+        <form class="my-lg-3">
+          <input id="search" class="form-control mr-sm-2" type="text" placeholder="Enter a keyword..&#x09; &#x09; &#x09; &#xF002;" style="font-family:Arial, FontAwesome">
+        </form>
+      </div>
+    </div>
+
+    <div class="col-md-3 my-lg-3">
+      <div id="badge"><p id="temp">0</p></div>
+      <button id="myCart" type="button" data-html="true" class="btn btn-primary" data-toggle="popover">My Cart  <i class="fas fa-sort-down"></i></button>
+    </div>
+  </div>
+</div>
+</nav>
+
+<nav class="bg-light">
+  <div class="container">
+    <div class="row">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Show by what you need</a>
+         <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+       <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
+       <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+      </div>
+    </li>
+
+    <li class="nav-item">
+     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Today's Deals</a>
+     <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+  </li>
+
+
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">My Shopping List</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+  </li>
+</ul>
+<button id="loginBtn">
+  <a class="nav-link" href="login.html" role="button" aria-haspopup="true" aria-expanded="false" style="font-family:Arial, FontAwesome">Login</a>
+</button>
+<button id="signupBtn">
+  <a class="nav-link" href="#" role="button" aria-haspopup="true" aria-expanded="false">Sign Up</a>
+</button>
+</div>
+</div>
+</nav>
+</header>
+
+<div id="index">
+
+<!--JUMBOTRON-->
+<div class="jumbotron jumbotron1 jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">We deliver it fresh right<br>at your door.</h1>
+    <p class="lead">Get a FREE same-day delivery for every Php 3,000 worth of products</p>
+    <a href="products.html"><button type="button" class="btn btn-primary">ORDER NOW</button></a>
+  </div>
+</div>
+
+<!--SECOND NAVBAR-->
+  <nav class="bg-light">
+  <div class="container">
+    <div class="row">
+      <ul class="nav nav-tabs" style="font-size: 15px;">
+      <li class="nav-item">
+       <a class="nav-link" href="#" role="button" aria-haspopup="true" aria-expanded="false">Today's Deals</a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#" role="button" aria-haspopup="true" aria-expanded="false">Holiday Guide</a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link" href="#" role="button" aria-haspopup="true" aria-expanded="false">Departments</a>
+   </li>
+   <li class="nav-item dropdown">
+     <a class="nav-link" href="#" role="button" aria-haspopup="true" aria-expanded="false">Imported Goods</a>
+   </li>
+   </ul>
+ </div>
+</div>
+</nav>
+
+    <div class="container top">
+      <div class="row">
+      <div class="col-md-6 mt-md-0 mt-3">
+     <p class="lead">From phone to fruits, these are the trending categories for today</p>
+    </div>
+      <div class="col-md-6 mt-md-0 mt-3">
+      <a href="products.html"><button id="allCategories" class="btn btn-primary">ALL CATEGORIES</button></a>
+    </div>
+  </div>
+  </div>
+  <div class="container categories">
+      <div class="row" >
+        <div class="col-md-3 mb-md-0 mb-3">
+          <!-- Content -->
+          <img id="holiday" src="images/holiday.png">
+          <div class="top-left"><h2 class="font-weight-bold" style="font-size: 25px;">Holiday gifts</h2>
+            <p class="lead" style="font-size: 12px;">Buy your loved ones what's <br> on their wishlists.</p>
+          </div>
+        </div>
+
+        <!--BREAK-->
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+       
+        <div class="col-md-3 mb-md-0 mb-3">
+          <!-- Content -->
+          <img id="groceries" src="images/groceries.png">
+          <div class="top-left"><h2 class="font-weight-bold" style="font-size: 25px;">Groceries</h2>
+            <p class="lead" style="font-size: 12px;">Stack up your fridge<br>with your favorites.</p>
+          </div>
+         </div>
+
+         <!--BREAK-->
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+          <div class="col-md-3 mb-md-0 mb-3">
+          <!-- Content -->
+          <img id="electronics" src="images/elec.png">
+         <div class="top-left"><h2 class="font-weight-bold" style="font-size: 25px;">Electronics</h2>
+          <p class="lead" style="font-size: 12px;">The latest gadgets and<br>electronics.</p>
+          </div>
+          </div>
+          <!--BREAK-->
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+         <div class="col-md-3 mb-md-0 mb-3">
+          <!-- Content -->
+          <img id="household" src="images/household.png">
+         <div class="top-left"><h2 class="font-weight-bold" style="font-size: 25px;">Household essenntials</h2>
+            <p class="lead" style="font-size: 12px;">From soaps to brooms.</p>
+          </div>
+         </div>
+          
+         </div>
+       </div>
+
+    <div class="container">
+      <h2 style="margin-top: 5%;">Deals & Promos</h2>
+      <div class="row" >
+        <div class="col-md-6 mt-md-0 mt-3">
+          <img class ="deals" src="images/deals1.png">
+        </div>
+        <div class="col-md-6 mt-md-0 mt-3">
+          <img class="deals" src="images/deals2.png">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container top">
+      <div class="row">
+      <div class="col-md-6 mt-md-0 mt-3">
+     <p class="lead">Here are the products people are buying right now</p>
+    </div>
+      <div class="col-md-6 mt-md-0 mt-3">
+      <button id="allCategories" class="btn btn-primary"><a href="products.html">ALL PRODUCTS</a></button>
+    </div>
+  </div>
+  </div>
+
+
+    <div class="container">
+    <div class="row">
+      <div class="col-md-3 mb-md-0 mb-3">
+          <div class="card">
+          <div class="card-body">
+            <img class="prod" src="images/prod1.png">
+            <h4 class="card-title" style="font-size: 18px">JBL Over-Ear Headphones</h4>
+            <h6 class="card-subtitle mb-2 text-muted"><i class="far fa-heart heart"></i> 142 people liked this</h6>
+            <br>
+            <h6 id="discount" class="card-subtitle mb-2">21% off</h6>
+            <h6 id="price" class="card-subtitle mb-2">₱8,265.00</h6>
+          </div>
+          </div>
+          </div>
+
+          <div class="col-md-3 mb-md-0 mb-3">
+          <div class="card">
+          <div class="card-body">
+            <img class="prod" src="images/prod2.png">
+            <h4 class="card-title" style="font-size: 18px">Diet Coke Soda, 12 Fl Oz 12 Pack</h4>
+            <h6 class="card-subtitle mb-2 text-muted"><i class="far fa-heart heart"></i> 23 people liked this</h6>
+            <br>
+            <h6 id="discount" class="card-subtitle mb-2"><br></h6>
+            <h6 id="price" class="card-subtitle mb-2">₱320.00</h6>
+          </div>
+          </div>
+          </div>
+
+          <div class="col-md-3 mb-md-0 mb-3">
+          <div class="card">
+          <div class="card-body">
+            <img class="prod" src="images/prod3.png">
+            <h4 class="card-title" style="font-size: 18px">Pyrex 6-Piece Glass Food Storage Set with Lids</h4>
+            <h6 class="card-subtitle mb-2 text-muted"><i class="far fa-heart heart"></i> 9 people liked this</h6>
+            <br>
+            <h6 id="discount" class="card-subtitle mb-2">10% off</h6>
+            <h6 id="price" class="card-subtitle mb-2">₱390.00</h6>
+          </div>
+          </div>
+        </div>
+
+          <div class="col-md-3 mb-md-0 mb-3">
+          <div class="card">
+          <div class="card-body">
+            <img class="prod" src="images/prod4.png">
+            <h4 class="card-title" style="font-size: 18px">The Legend of Zelda: Breath of the Wild</h4>
+            <h6 class="card-subtitle mb-2 text-muted"><i class="far fa-heart heart"></i> 254 people liked this</h6>
+           <br>
+            <h6 id="discount" class="card-subtitle mb-2">21% off</h6>
+            <h6 id="price" class="card-subtitle mb-2">₱2,595.00</h6>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</div> <!--end of index-->
+
+<div id="prodPage">
+
+
+</div><!--end of index -->
+
+<!-- Footer -->
+<footer class="page-footer font-small teal pt-4">
+  <div class="container-fluid foot1">
+    <div class="container">
+      <div class="row" >
+        <div class="col-md-6 mt-md-0 mt-3 spark">
+          <!-- Content -->
+           <div>
+            <img id="shimmer" src="images/spark.png">
+          </div>
+          <div>
+          <h5 class="text-uppercase font-weight-bold my-lg-5">
+          Get recommendations, deals, tips, updates, promotions and more.</h5>
+          </div>
+        </div>
+
+        <!--BREAK-->
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+       
+        <div class="col-md-6 mb-md-0 mb-3">
+          <!-- Content -->
+          <div class="wrap">
+          <div class="search my-lg-5">
+            <input type="text" class="searchTerm" placeholder="Your email Address">
+            <button type="submit" class="searchButton">
+              SIGN UP
+           </button>
+           </div>
+         </div>
+
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </div>
+</div>
+
+   <!--NEW CONTAINER-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 mt-md-0 mt-3">
+        <!-- Content -->
+        <div class="my-lg-2">
+          <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
+        </div>
+        <div class="my-lg-2">
+          © Pick & Pay 2018. All Rights Reserved.
+        </div>
+      </div>
+         <!--BREAK-->
+        <hr class="clearfix w-100 d-md-none pb-3">
+        
+        <div class="col-md-7 mb-md-0 mb-3">
+          <!-- Content -->
+          <ul id="menu">
+            <li>About</li>
+            <li>Contact Us</li>
+            <li>FAQs</li>
+            <li>Terms and Conditions</li>
+            <li>Privacy and Policy</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+  <!-- Footer -->
+  <script type="text/javascript" src="index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="bootstrap.js"></script>
+</body>
+</html>

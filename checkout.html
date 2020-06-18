@@ -1,0 +1,346 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://kit.fontawesome.com/90ca227d19.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <title>Pick n' Pay</title>
+  </head>
+  <body>
+
+    <!--FIRST NAV BAR-->
+    <header id="myHeader">
+    <nav class="bg-light">
+      <div class="container">
+       <div class="row">
+        <div class="col-md-3 my-lg-2">
+          <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
+        </div>
+
+        <div class="select col-md-6">
+          <form class="my-lg-3">
+           <select id="select" class="form-control mr-sm-2" name="All">
+             <option value="">All</option>
+             <option value="choice1">choice1</option>
+             <option value="choice2">choice2</option>
+             <option value="choice3">choice3</option>
+             <option value="choice4">choice4</option>
+           </select>
+         </form>
+
+         <div>
+          <form class="my-lg-3">
+            <input id="search" class="form-control mr-sm-2" type="text" placeholder="Enter a keyword..&#x09; &#x09; &#x09; &#xF002;" style="font-family:Arial, FontAwesome">
+          </form>
+        </div>
+      </div>
+
+      <div class="col-md-3 my-lg-3">
+        <div id="badge"><p id="temp">0</p></div>
+        <button id="myCart" type="button" data-html="true" class="btn btn-primary" data-toggle="popover">My Cart  <i class="fas fa-sort-down"></i></button>
+      </div>
+    </div>
+  </div>
+  </nav>
+
+  <nav class="bg-light">
+    <div class="container">
+      <div class="row">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+           <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Show by what you need</a>
+           <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
+         <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+       <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Today's Deals</a>
+       <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+      </div>
+    </li>
+
+
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">My Shopping List</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+      </div>
+    </li>
+  </ul>
+  <button id="loginBtn">
+    <a class="nav-link" href="login.html" role="button" aria-haspopup="true" aria-expanded="false" style="font-family:Arial, FontAwesome">Login</a>
+  </button>
+  <button id="signupBtn">
+    <a class="nav-link" href="#" role="button" aria-haspopup="true" aria-expanded="false">Sign Up</a>
+  </button>
+  </div>
+  </div>
+  </nav>
+  </header>
+
+
+  <div class="container mb-5">
+    <div class="row">
+      
+      <div class="col-md-8" >
+        <h1 class="mt-3">Checkout</h1>
+        <p class="text-muted">Fill out the information below to proceed to checkout</p>
+
+      <div class="row" style="border-bottom: 1px solid grey">
+      <div class="col-md-6">
+        <div class="num">1</div>
+        <h5 class="ml-3" style="font-weight: bolder; display: inline-block;">Your Details</h5>
+
+        <div class="form-group mt-4">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="johnsmith@email.com">
+
+            <label for="fname" class="mt-2">First name</label>
+            <input type="text" class="form-control checkout-form" id="fname" placeholder="John">
+
+          </div>
+
+          <h5 class="ml-2" style="font-weight: bolder;">Delivery Address</h5>
+      </div>
+
+      <div class="col-md-6">
+          <div class="form-group" style="margin-top: 60px;">
+            <label for="contact">Contact number</label>
+            <input type="text" class="form-control checkout-form" id="contact" placeholder="+639566793327">
+
+            <label for="lname" class="mt-2">Last name</label>
+            <input type="text" class="form-control checkout-form" id="lname" placeholder="Smith">
+
+          </div>
+      </div>
+
+            <label for="address" class="mt-2 ml-2">Address</label>
+            <input type="text" class="form-control checkout-form mx-3" id="address" placeholder="">
+
+          <div class="col-md-6 mt-2">
+          <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" class="form-control checkout-form" id="city" placeholder="">
+
+            <label for="country" class="mt-2">Country</label>
+            <input type="text" class="form-control checkout-form" id="country" placeholder="Philippines">
+          </div>
+        <h5 class="ml-2" style="font-weight: bolder;">Billing Address</h5>
+
+      <div class="form-group">
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="customCheck1" checked="">
+        <label class="custom-control-label" for="customCheck1">Same as delivery address</label>
+      </div>
+    </div>
+
+      </div>
+
+          <div class="col-md-6 mt-2">
+          <div class="form-group">
+            <label for="province">Province</label>
+            <input type="text" class="form-control checkout-form" id="province" placeholder="">
+
+            <label for="postal" class="mt-2">Postal code</label>
+            <input type="text" class="form-control checkout-form" id="postal" placeholder="">
+          </div>
+      </div>
+
+               <label for="address" class="mt-2 ml-3">Address</label>
+            <input type="text" class="form-control checkout-form mx-3" id="address" placeholder="">
+
+          <div class="col-md-6 my-lg-2">
+          <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" class="form-control checkout-form" id="city" placeholder="">
+
+            <label for="country" class="mt-2">Country</label>
+            <input type="text" class="form-control checkout-form" id="country" placeholder="Philippines">
+          </div>
+    </div>
+     
+
+     <div class="col-md-6 my-lg-2">
+          <div class="form-group">
+            <label for="province">Province</label>
+            <input type="text" class="form-control checkout-form" id="province" placeholder="">
+
+            <label for="postal" class="mt-2">Postal code</label>
+            <input type="text" class="form-control checkout-form" id="postal" placeholder="">
+          </div>
+      </div>
+
+    </div>
+
+
+    <div class="form-group mt-5">
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="terms" checked="">
+        <label class="custom-control-label" for="terms">I understand and agree the <u>Terms and Conditions</u></label>
+      </div>
+    </div>
+
+
+        <button id="continue" data-toggle="collapse" data-target="#payment"  aria-expanded="false" aria-controls="payment" class="btn btn-primary check" style="color: white; width: 200px;">CONTINUE</button>
+
+     <br>
+        <div class="num mt-5">2</div>
+        <h5 class="ml-3" style="font-weight: bolder; display: inline-block;">Payment</h5>
+
+        <div id="payment" class="collapse mt-5" >
+        <div class="card bg-light mb-3" style="max-width: 20rem;">
+        <div class="card-header">Credit/Debit</div>
+        <div class="card-body">
+        <div class="form-group">
+          <label for="cardnum">Card number</label>
+          <input type="text" class="form-control" id="cardnum" placeholder="xxxx-xxxx-xxxx-5678">
+        </div>
+
+          <div class="row">
+            <div class="col-md-6">
+               <div class="form-group">
+          <label for="expiry">Expiry</label>
+          <input type="text" class="form-control" id="expiry" placeholder="11/17">
+        </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="col-md-6">
+               <div class="form-group">
+          <label for="cvv">CVV</label>
+          <input type="text" class="form-control" id="cvv" placeholder="">
+        </div>
+            </div>
+          </div>
+        <button class="btn btn-primary check" style="color: white; width: 200px;">MAKE PAYMENT</button>
+      </div>
+    </div>
+
+        </div> 
+        </div>
+
+        <p class="mt-5" class="text-muted">Supported payment types:</p>
+      <img  src="images/payment.png">
+      <p  class="text-muted">Any questions, call 1300 362 603 <u>What is your return policy?</u><u> When can I expect my order?</u></p>
+      <p class="text-muted">Copyright© 1995-2017 Samsung all rights reserved</p>
+</div>
+      <div class="col-md-4" style="border-left: 1px solid grey;">
+        
+      </div>
+    
+  </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="page-footer font-small teal pt-4">
+  <div class="container-fluid foot1">
+    <div class="container">
+      <div class="row" >
+        <div class="col-md-6 mt-md-0 mt-3 spark">
+          <!-- Content -->
+           <div>
+            <img id="shimmer" src="images/spark.png">
+          </div>
+          <div>
+          <h5 class="text-uppercase font-weight-bold my-lg-5">
+          Get recommendations, deals, tips, updates, promotions and more.</h5>
+          </div>
+        </div>
+
+        <!--BREAK-->
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+       
+        <div class="col-md-6 mb-md-0 mb-3">
+          <!-- Content -->
+          <div class="wrap">
+          <div class="search my-lg-5">
+            <input type="text" class="searchTerm" placeholder="Your email Address">
+            <button type="submit" class="searchButton">
+              SIGN UP
+           </button>
+           </div>
+         </div>
+
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </div>
+</div>
+
+   <!--NEW CONTAINER-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 mt-md-0 mt-3">
+        <!-- Content -->
+        <div class="my-lg-2">
+          <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
+        </div>
+        <div class="my-lg-2">
+          © Pick & Pay 2018. All Rights Reserved.
+        </div>
+      </div>
+         <!--BREAK-->
+        <hr class="clearfix w-100 d-md-none pb-3">
+        
+        <div class="col-md-7 mb-md-0 mb-3">
+          <!-- Content -->
+          <ul id="menu">
+            <li>About</li>
+            <li>Contact Us</li>
+            <li>FAQs</li>
+            <li>Terms and Conditions</li>
+            <li>Privacy and Policy</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+   <script type="text/javascript" src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="bootstrap.js"></script>
+  </body>
+  </html>
+
+     

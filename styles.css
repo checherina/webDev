@@ -1,0 +1,419 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  background: #fff;
+   zoom: 90%;
+   font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul#menu li {
+font-size: 15px;
+  display:inline;
+  padding: 10px 10px;
+}
+
+#password, #email{
+    border-radius: 25px;
+    background-color: #EAECEE;
+    border-color: #EAECEE;  
+}
+
+#badge{
+  font-size: 18px; 
+  text-align: center;
+  border-radius: 45%; 
+  background-color:#8828C0; 
+  float: left; 
+  color: #fff; 
+  width: 35px; 
+  height: 30px; 
+  margin-right: 5px;
+}
+
+#holiday, #groceries, #electronics, #household{
+    height: 100%;
+    width: 90%;
+    border: 1px solid #D3D3D3;
+    border-radius: 2%;
+    display: inline;
+}
+
+
+#discount{
+    color: #9932CC;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#price{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+#myHeader{
+    z-index: 1000;
+}
+
+
+#signupBtn, #loginBtn{
+padding: 0;
+border: none;
+background: none;
+}
+
+#signup{
+   text-align: center;
+   width: 50%;
+   margin-left: 5%;
+   border: 2px solid #9932CC;
+   background: #fff;
+   color: #9932CC;
+}
+
+#close{
+    border: 3px solid #9932CC;
+    width: 100px;
+    color: #9932CC;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+#allCategories{
+    margin-right: 5%;
+    float: right;
+   border: 2px solid #9932CC;
+   background: #fff;
+   color: #9932CC;
+}
+
+#forgot{
+    margin-left: 25%;
+}
+
+#loginBtn{
+    margin-left: 250px;
+}
+
+#login{
+    width: 50%;
+}
+
+#shimmer{
+    margin-top: 40px;
+    margin-right: 10px;
+    width:40px;
+    height: 50px;
+}
+
+#myCart{
+font-size: 20px;
+padding: 0;
+border: none;
+color: black;
+background: #fff;
+}
+
+#item{
+    float: left;
+ }
+
+#addCart{
+    background-color: #9932CC;
+    color: #fff;
+}
+
+#plus{
+    border-radius: 25px;
+    color: #fff;
+    background-color: #232323;
+    margin-right: 15px;
+}
+
+#minus{
+    border-radius: 25px;
+    background-color: #c0c2c4;
+    margin-left: 15px;
+    color: #fff;
+}
+
+#quantity{
+    border: none;
+    background-color: #EAECEE;
+    border-radius: 25px;
+    width: 60px;
+    height: 40px;
+}
+
+#select, #search{
+border-radius: 40px;
+border-color: #EAECEE;
+height: 30px;
+font-size: 12px;
+background-color: #EAECEE;  
+float: left;
+}
+
+#container{
+margin: 0 auto;
+}
+
+
+#subtotal, #shipping{
+    font-weight: bolder;
+    text-align: right;
+}
+
+#checkout{
+    margin-top: 121%;
+    width: 100%;
+}
+
+
+#select{
+width: 150px;
+margin-top: 0 auto;
+}
+
+#cart{
+border-color: white;
+border-bottom: 1px solid #ccced1;
+}
+
+#cart img{
+    width: 90%;
+}
+
+#search{
+width: 210px;
+float: left;
+}
+
+#objects{
+margin-left: 10%;
+}
+#menu{
+    margin-top: 11%;
+}
+
+
+#remove{
+    border:none;
+    background-color: #fff;
+    color: #ccced1;
+}
+
+.search {
+  width: 400px;
+  position: relative;
+  display: flex;
+}
+
+.topDeals{
+  background: rgba(0,0,0,0.5);
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.searchTerm {
+  width: 300px;
+  border: 1px solid #fff;
+  border-right: none;
+  height: 40px;
+  border-radius: 3px 0 0 3px;
+  outline: none;
+  padding: 5px;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #9932CC;
+}
+
+.searchButton {
+  width: 100px;
+  height: 41px;
+  margin-top: 1px;
+  background: #a619d1;
+  text-align: center;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+    width: 100%;
+    margin-left: 25%;
+}
+
+.heart{
+    color:#9932CC;
+    font-weight: bold;
+}
+
+.nav-bar{
+background-color: #fff;
+}
+
+.nav-link{
+color: #232323;
+}
+
+.popover-title .close{
+ position: relative;
+ bottom: 3px;
+}
+
+.bg-light{
+    border-bottom: 1px solid #D6DBDF;
+    background-color: #fff;
+}
+.jumbotron1{
+    background-image: url('images/package.jpg');
+    background-size: cover;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 3px 3px 2px #474747;
+} 
+
+.jumbotron2{
+    background-image: url('images/grocery.jpg');
+    background-size: cover;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 3px 3px 2px #474747;
+} 
+
+.prod{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.foot1{
+background-color: #8828C0;
+color: #fff;
+height: 40%;
+}
+
+.modal-header{
+    border: none;
+}
+.top-left {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  margin-left: 10px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.myModal{
+    border-radius: 15px;
+    width:800px;
+    height: 550px;
+}
+
+.deals{
+    height: 80%;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.whitebtn{
+    text-align: center;
+    border: 2px solid #9932CC;
+    background: #fff;
+    color: #9932CC;
+    height: 40px;
+    font-weight: bold;
+    width: 250px;
+}
+
+.top{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.spark{
+    display: flex;
+}
+
+.count{
+    display: block;
+    border-radius:50%; 
+    color: purple;
+    width: 10%;
+    float: right;
+}
+
+.container{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.btn-primary{
+    background: white !important!;
+    background-color: #9932CC;
+}
+
+.hello{
+    margin-left: 2px;
+}
+
+.top-navbar{
+    border-bottom: 1px solid #232323;
+}
+
+.card-product{
+    border-radius: 5px;
+}
+
+.container-handler{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.viewCart{
+  color: #9932CC;
+  background-color: #fff;
+  border: 2px solid #9932CC;
+  font-weight: bold;
+}
+
+.check{
+  font-weight: bold;
+  background-color: #9932CC;
+}
+
+
+
+.num{
+ background-color: black;
+ border: 5px solid black;
+ border-radius: 50%;
+ width: 30px;
+ height: 30px;
+ color: white;
+ text-align: center;
+ display: inline-block;
+}
+
+
+.checkout-form{
+   border-radius: 25px;
+   background-color: #EAECEE;
+  border-color: #EAECEE;  
+}
